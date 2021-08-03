@@ -1,0 +1,37 @@
+:root{
+  --warm-gray-20: #f3f2ef;
+  --blue-70: #0a66c2;
+  --blue-70-darker: #08549e;
+
+  --website-background: var( --warm-gray-20 )
+}
+
+body{
+  background: var( --website-background );
+}
+a{
+  color: var(--blue-70 );
+  font-weight: bolder;
+}
+
+.btn{
+  padding: 5px 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.btn-primary{
+  background-color: var(--blue-70)
+}
+.btn-primary:hover{
+  background-color: var(--blue-70-darker)
+}
+
+.card{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .list-group-item{
+  padding: 0;
+}
+

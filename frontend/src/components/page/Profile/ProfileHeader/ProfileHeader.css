@@ -1,0 +1,47 @@
+#profileHeader .list-group-item{
+    min-height: 50%
+}
+
+#profilePic{
+    position: relative
+}
+#profilePic img{
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0
+}
+
+#profileInfoSection p{
+    font-size: 16px;
+}
+#profileInfoSection a{
+    text-decoration: none;
+}
+#profileInfoSection a:hover{
+    text-decoration: underline;
+}
+
+#actualCompany{
+    width: max-content;
+    padding: 5px 10px 5px 5px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    font-weight: 515;
+}
+#actualCompany span{
+    color: black;
+}
+#actualCompany img{
+    margin: 5px;
+}
+
+#profileHeaderBtns .btn{
+    border-radius: 30px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+
