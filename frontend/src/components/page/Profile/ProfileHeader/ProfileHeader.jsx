@@ -2,7 +2,7 @@ import {Button, Card, Col, ListGroup, Row} from "react-bootstrap";
 import './ProfileHeader.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPencilAlt} from "@fortawesome/free-solid-svg-icons";
-import EditButton from "../../../atom/EditButton/EditButton";
+import EditButton from "../../../atoms/EditButton/EditButton";
 
 const mockCoverUrl = 'assets/img/mock/mock-profile-cover.jpeg'
 const mockProfilePicture = 'https://via.placeholder.com/152'
@@ -13,6 +13,7 @@ const mockNameSurname = 'Name Surname'
 const mockJobTitle = 'jobTitle at Company name'
 const mockLocation = 'location'
 const MockConnectionsN = 'XXX'
+
 const ActualCompany = () =>
     <a href={'/#'}>
         <div id={'actualCompany'}>
@@ -65,7 +66,7 @@ function ProfileHeader() {
                                     <p className={'m-0'}>
                                         <span> {mockLocation} </span>
                                         ·
-                                        <span> <a href={'/?contactmodal=true'}>{'contact info'}</a> </span>
+                                        <span> <a href={'/?contactModal=true'}>{'contact info'}</a> </span>
                                     </p>
                                     <p className={'mt-2'}>
                                         <a href={'/#'}> {MockConnectionsN} Connections </a>
@@ -76,7 +77,7 @@ function ProfileHeader() {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col md={8}>
+                                <Col sm={12} md={12} lg={12}>
                                     <section id={'profileHeaderBtns'}>
                                         <ButtonAvailableFor/>
                                         <ButtonAddSection/>
