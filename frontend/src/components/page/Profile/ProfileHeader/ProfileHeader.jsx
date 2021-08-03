@@ -16,6 +16,7 @@ const MockConnectionsN = 'XXX'
 
 const ActualCompany = () =>
     <a href={'/#'}>
+
         <div id={'actualCompany'}>
             <img src={mockActualCompanyPicUrl}/>
             <span>{mockActualCompanyName}</span>
@@ -42,6 +43,21 @@ const ButtonOther = () =>
         Other
     </Button>
 
+const ProfileInfo = () =>
+    <>
+        <h1> {mockNameSurname} </h1>
+        <h5> {mockJobTitle} </h5>
+        <p className={'m-0'}>
+            <span> {mockLocation} </span>
+            ·
+            <span> <a href={'/?contactModal=true'}>{'contact info'}</a> </span>
+        </p>
+        <p className={'mt-2'}>
+            <a href={'/#'}> {MockConnectionsN} Connections </a>
+        </p>
+    </>
+
+
 function ProfileHeader() {
 
     return (
@@ -61,19 +77,15 @@ function ProfileHeader() {
                             </div>
                             <Row className={'mt-3 mb-3 g-0 flex-row justify-content-between'}>
                                 <Col sm={12} md={12} lg={6}>
-                                    <h1> {mockNameSurname} </h1>
-                                    <h5> {mockJobTitle} </h5>
-                                    <p className={'m-0'}>
-                                        <span> {mockLocation} </span>
-                                        ·
-                                        <span> <a href={'/?contactModal=true'}>{'contact info'}</a> </span>
-                                    </p>
-                                    <p className={'mt-2'}>
-                                        <a href={'/#'}> {MockConnectionsN} Connections </a>
-                                    </p>
+                                    <ProfileInfo/>
                                 </Col>
-                                <Col sm={12} md={12} lg={6}>
-                                    <ActualCompany/>
+                                <Col sm={12} md={12} lg={6}
+                                     className={'' +
+                                     'd-flex flex-row align-items-center' +
+                                     'justify-content-lg-end ' +
+                                     'justify-content-sm-start' +
+                                     ''}>
+                                        <ActualCompany/>
                                 </Col>
                             </Row>
                             <Row>
