@@ -13,3 +13,7 @@
 #profileActivities p{
     margin: 0
 }
+
+#seeAllActivities a{
+    color: black
+}
