@@ -76,16 +76,16 @@ function ProfileHeader() {
                                 <EditButton/>
                             </div>
                             <Row className={'mt-3 mb-3 g-0 flex-row justify-content-between'}>
-                                <Col sm={12} md={12} lg={6}>
+                                <Col sm={12} md={12} lg={7}>
                                     <ProfileInfo/>
                                 </Col>
-                                <Col sm={12} md={12} lg={6}
+                                <Col sm={12} md={12} lg={5}
                                      className={'' +
-                                     'd-flex flex-row align-items-center' +
-                                     'justify-content-lg-end ' +
-                                     'justify-content-sm-start' +
-                                     ''}>
-                                        <ActualCompany/>
+                                     'd-flex flex-row align-items-top ' +
+                                     'justify-content-lg-center ' +
+                                     'justify-content-sm-start'
+                                     }>
+                                    <ActualCompany/>
                                 </Col>
                             </Row>
                             <Row>

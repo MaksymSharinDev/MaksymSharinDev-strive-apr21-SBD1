@@ -52,7 +52,7 @@ function ProfileActivities() {
                     </ListGroupItem>
                     <ListGroupItem >
                         <div id={'seeAllActivities'} className={'p-2 pt-3 d-flex justify-content-center align-items-end'}>
-                            <a href={"/feed?filter='activities'"} > See All Activities </a>
+                            <a href={"/feed?filter=activities"} > See All Activities </a>
                         </div>
                     </ListGroupItem>
                 </ListGroup>

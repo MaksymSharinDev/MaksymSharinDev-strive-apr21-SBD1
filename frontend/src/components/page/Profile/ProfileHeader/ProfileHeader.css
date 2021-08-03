@@ -17,6 +17,8 @@
 }
 #profileInfoSection a{
     text-decoration: none;
+    height: max-content;
+    weight: max-content;
 }
 #profileInfoSection a:hover{
     text-decoration: underline;

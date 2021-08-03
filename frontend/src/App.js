@@ -11,15 +11,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-          <Route exact={'/'}>
-              <Redirect to="/profile" />
-          </Route>
-          <Route exact={'/profile'}>
-              <ProfilePage/>
-          </Route>
-          <Route exact={'/feed'}>
 
-          </Route>
+              <Route exact path={'/'}>
+                  <Redirect to="/profile" />
+              </Route>
+              <Route exact path={'/profile'}>
+                  <ProfilePage/>
+              </Route>
+              <Route exact path={'/feed'}>
+
+              </Route>
 
       </Router>
     </div>
