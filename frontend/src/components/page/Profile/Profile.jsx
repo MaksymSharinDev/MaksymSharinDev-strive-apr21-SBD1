@@ -3,6 +3,7 @@ import {Container, Row, Col} from "react-bootstrap"
 import ProfileHeader from './ProfileHeader/ProfileHeader.jsx'
 import ProfileBiography from './ProfileBiography/ProfileBiography.jsx'
 import ProfileActivities from './ProfileActivities/ProfileActivities.jsx'
+//import ProfileExperiences from "./ProfileExperiences/ProfileExperiences";
 
 const Profile = () => {
     return (
@@ -15,6 +16,7 @@ const Profile = () => {
                             <ProfileHeader/>
                             <ProfileBiography/>
                             <ProfileActivities/>
+                            {/*<ProfileExperiences/>*/}
                         </div>
                     </Col>
                     <Col>

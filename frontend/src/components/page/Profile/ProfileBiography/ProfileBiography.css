@@ -18,3 +18,11 @@
     content: "... ";
     text-decoration: none;
 }
+#profileBio .bio-text{
+    pointer-events: none;
+    cursor: text;
+}
+#profileBio .bio-text:focus{
+    border: 1px gray solid;
+    pointer-events: all;
+}
