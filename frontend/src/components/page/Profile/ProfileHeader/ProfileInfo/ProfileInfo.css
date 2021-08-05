@@ -1,0 +1,89 @@
+#profilePic {
+    position: relative
+}
+
+#profilePic img,
+#profilePic .dropzone {
+    width: 152px;
+    height: 152px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+#profilePic .uploadIcon{
+    position: relative;
+    right: 0;
+    transition: right 2000ms;
+}
+
+#profilePic .uploadIcon:hover {
+    right: -100%;
+}
+
+
+#profileInfoSection p {
+    font-size: 16px;
+}
+
+#profileInfoSection a {
+    text-decoration: none;
+    height: max-content;
+    width: max-content;
+}
+
+#profileInfoSection a:hover {
+    text-decoration: underline;
+}
+
+
+#profileInfoSection .contact-info{
+    border: 1px solid gray;
+    width: max-content;
+    max-height: 100%;
+    transition: max-height  0.25s ease-in-out;
+
+}
+#profileInfoSection .contact-info.collapsed {
+    border: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-in-out;
+}
+
+#actualCompany {
+    width: max-content;
+    padding: 5px 10px 5px 5px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    font-weight: 515;
+}
+
+#actualCompany span {
+    color: black;
+}
+
+#actualCompany img {
+    margin: 5px;
+}
+
+#profileInfoSection h1 {
+    position: relative;
+    left: -4px;
+}
+#profileInfoSection .infoField{
+    width: max-content;
+    padding: 1px;
+    border: 1px transparent solid;
+    transition: border 0.5s;
+
+}
+
+#profileInfoSection .infoField[contenteditable="true"]{
+    border: 1px gray solid;
+    border-radius: 5px;
+    padding: 1px;
+    transition: border 0.5s;
+}

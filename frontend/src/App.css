@@ -6,6 +6,10 @@
   --website-background: var( --warm-gray-20 )
 }
 
+*{
+  transition: all 0.25s;
+}
+
 body{
   background: var( --website-background );
 }

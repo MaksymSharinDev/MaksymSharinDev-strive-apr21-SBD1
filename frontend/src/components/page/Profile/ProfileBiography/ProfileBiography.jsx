@@ -17,9 +17,9 @@ class ProfileBiography extends React.Component {
         bio: '',
         text: ''
     }
+
     refExpandBioLink = createRef()
     refBioText = createRef()
-
 
     componentDidMount() {
         const shrinkBio = text => text.split('\n')[0]
@@ -44,6 +44,7 @@ class ProfileBiography extends React.Component {
         let [ bio , text ] = e.currentTarget.value
         this.setState({...this.state, bio , text })
     }
+
     render = () =>
         <section id={'profileBio'}>
             <Card className={'m-2'}>

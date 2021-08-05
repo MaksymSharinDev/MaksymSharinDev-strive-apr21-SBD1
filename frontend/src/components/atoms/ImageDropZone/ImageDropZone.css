@@ -1,0 +1,26 @@
+
+.dropzone{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1
+}
+.dropzone .uploadIcon{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 32px;
+
+    color: rgba(0, 0, 0, 0.70);
+    background-color: white
+}
+
+.dropzone:hover .uploadIcon {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
+.uploadIcon:hover {
+    cursor: pointer;
+}

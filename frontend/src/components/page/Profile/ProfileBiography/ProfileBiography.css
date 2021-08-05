@@ -9,20 +9,20 @@
     right: 20px;
     bottom: 10px;
     color: black;
-
 }
-
-
 
 #profileBio a:before {
     content: "... ";
     text-decoration: none;
 }
 #profileBio .bio-text{
+    padding: 11px;
     pointer-events: none;
     cursor: text;
 }
 #profileBio .bio-text:focus{
+    padding:10px;
     border: 1px gray solid;
+    border-radius: 10px;
     pointer-events: all;
 }

@@ -1,0 +1,32 @@
+
+#profileCoverSection{
+    width: clamp(100%, 800px, 100%);
+    height: 200px;
+}
+
+#profileCoverSection img {
+    width: clamp(100%, 800px, 100%);
+    height: 200px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+#profileCoverSection .btn{
+    color: black;
+    background-color: white
+}
+
+#profileCoverSection .btn:hover{
+    color: white;
+    background-color: rgba(115, 115, 115, 0.50)
+}
+
+#profileCoverSection .editingBtnsWrapper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#profileCoverSection .editingBtnsWrapper *{
+    z-index: 2;
+}
